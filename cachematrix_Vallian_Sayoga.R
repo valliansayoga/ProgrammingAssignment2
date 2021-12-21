@@ -31,6 +31,10 @@ makeCacheMatrix <- function(x = matrix()) {
     
 }
 
+# The function below calculates and caching the result
+# into the variable "m" so it can be accessed by the
+# makeCacheMatrix function
+
 cacheSolve <- function(x, ...) {
     m <- x$getinverse()
     
